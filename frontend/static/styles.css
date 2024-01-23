@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'simvoni';
+    src: url('https://meower.org/Simvoni.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'simvonib';
+    src: url('https://meower.org/Simvoni-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --background: #0f0f0f; /* totally not stolen from YT */
+    --gray: #1d1d21;
+    --dark-gray: #161618;
+    --light-gray: #D3D3D3;
+    --link: #4179c8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'simvoni', sans-serif;
+    color: white;
+}
+
+body {
+    background-color: var(--background);
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.page {
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1240px;
+}
+
+.topnav {
+    background-color: var(--gray);
+    position: sticky;
+}
+
+.topnav-inner {
+    overflow: hidden;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80em;
+    max-height: 54px;
+}
+
+.topnav-inner a, .topnav-inner span, .topnav-inner button {
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+.topnav-inner .left {
+    float: left;
+}
+
+.topnav-inner .right {
+    float: right;
+}
+
+div.heading {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.container {
+    height: 275px;
+    padding: 0.75em;
+    background-color: var(--dark-gray);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+a {
+    color: var(--link);
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1240px;
+    column-gap: 10px;
+}
+
+.gallery div.container {
+    margin-right: 10px;
+}
+
+.gallery div.container:last-child {
+    margin-right: 0;
+}
